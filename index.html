@@ -3,76 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Upadhyay - Portfolio</title>
+    <title>Ayush Upadhyay | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons for Github, External Link, etc. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle" aria-label="Toggle theme"></button></li>
-            </ul>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">AU<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="btn-primary">Contact</a>
         </nav>
     </header>
 
-    <section id="about" class="animated-section">
-        <div class="about-content">
-            <img src="ayush photo.png" alt="Ayush Upadhyay" class="profile-photo">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hello! I'm Ayush Upadhyay, a passionate B.Tech Computer Science student. I am a dedicated full-stack web developer with a keen interest in building dynamic and responsive websites. My goal is to create impactful and user-friendly digital experiences.</p>
+    <!-- Hero Section with Photo -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <span class="badge">B.Tech Computer Science</span>
+            <h1>Hi, I'm <span class="highlight">Ayush Upadhyay</span></h1>
+            <p class="subtitle">A passionate Software Developer building clean, modern, and scalable web experiences & applications.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-main">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        
+        <!-- Profile Photo -->
+        <div class="hero-image">
+            <img src="ayushphoto.png" alt="Ayush Upadhyay">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, Responsive Web Design, UI/UX Principles</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database & Backend</h3>
+                <p>DBMS, Relational Algebra, SQL, Node.js & Express</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Core Concepts</h3>
+                <p>Distributed Systems, Software Engineering, Web Technologies</p>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="animated-section">
-        <h2>My Skills</h2>
-        <div class="skills-list">
-            <span>C</span>
-            <span>C++</span>
-            <span>Java Development</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Full-stack Development</span>
-        </div>
-    </section>
-    
-    <section id="projects" class="animated-section">
-        <h2>My Projects</h2>
-        <div class="project-item">
-            <h3>Portfolio Website</h3>
-            <p>A personal portfolio website showcasing my skills, projects, and contact information. Built using HTML, CSS, and JavaScript, demonstrating responsive design principles.</p>
-        </div>
-        <div class="project-item">
-            <h3>Flipkart Clone</h3>
-            <p>A front-end clone of the Flipkart e-commerce website, recreating its user interface and layout. This project helped me enhance my skills in creating complex UI structures.</p>
-        </div>
-        <div class="project-item">
-            <h3>Netflix Clone</h3>
-            <p>A front-end clone of the Netflix streaming platform's landing page. This project focused on replicating the visual design and layout using modern web development techniques.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="animated-section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via email or connect with me on social media.</p>
-        <div class="contact-links">
-            <a href="mailto:ayushupadhyay0908@gmail.com"><i class="fas fa-envelope"></i> ayushupadhyay0908@gmail.com</a>
-            <a href="https://www.linkedin.com/in/ayush-upadhyay0908?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i> Ayush Upadhyay</a>
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
             
+            <!-- ======================================================== -->
+            <!-- PROJECT 1: Smart-QR-Restaurant-System -->
+            <!-- ======================================================== -->
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="tag">Web System</span>
+                    <h3>Smart QR Restaurant System</h3>
+                    <p>A smart web application designed for digital restaurant management, QR code ordering, and seamless receipt printing.</p>
+                    
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://pa8096287-design.github.io/Smart-QR-Restaurant-System/qrprint.html" target="_blank" class="live-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <!-- Agar iska GitHub repo link add karna ho toh neeche ki line uncomment karein: -->
+                        <!-- <a href="GITHUB_REPO_URL" target="_blank"><i class="fa-brands fa-github"></i> Code</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- PROJECT 2: Real-Time Chat Application -->
+            <!-- ======================================================== -->
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="tag">Web App</span>
+                    <h3>Real-Time Chat Application</h3>
+                    <p>An interactive live chat application featuring instant message delivery, real-time connection, and responsive user UI.</p>
+                    
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Socket.io</span>
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://ichat-yivu.onrender.com" target="_blank" class="live-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- PROJECT 3: Live Clock -->
+            <!-- ======================================================== -->
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="tag">Utility Tool</span>
+                    <h3>Live Clock</h3>
+                    <p>A clean, lightweight, real-time clock application with dynamic UI updates and modern styling.</p>
+                    
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://pa8096287-design.github.io/-live-clock/" target="_blank" class="live-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- FUTURE PROJECT TEMPLATE (Isse Future Me Duplicate Karo) -->
+            <!-- ======================================================== -->
+            <!-- 
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="tag">Category Tag</span>
+                    <h3>Project Title</h3>
+                    <p>Project ki choti si description yahan likho.</p>
+                    <div class="project-tech">
+                        <span>Tech1</span>
+                        <span>Tech2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="PROJECT_LIVE_URL" target="_blank" class="live-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            -->
+
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-card">
+            <h2>Let's Connect</h2>
+            <p>I am open to collaborations, internships, and software development opportunities.</p>
+            <div class="social-links">
+                <a href="https://github.com/pa8096287-design" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ayush Upadhyay. All Rights Reserved.</p>
+        <p>&copy; 2026 Ayush Upadhyay. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
